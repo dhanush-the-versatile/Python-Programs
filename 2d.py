@@ -1,8 +1,9 @@
 #Python Program to display all prime numbers within an interval
-num = int(input("Enter a Number: "))
-for n in range(2, num):
+a = int(input("Enter Range lower limit: "))
+b = int(input("Enter Range Upper limit: "))
+for n in range(a, b+1):
     for i in range(2, n):
         if n % i == 0:
             break
     else:
-        print(n)
+        print(n,end=' ')
